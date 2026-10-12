@@ -1,0 +1,666 @@
+```astro
+---
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Work — Pedro Leston Martins</title>
+
+    <meta
+      name="description"
+      content="Selected work by Pedro Leston Martins — Industrial, Product and Computational Designer."
+    />
+  </head>
+
+  <body>
+
+    <main>
+
+      <!-- HEADER -->
+
+      <header>
+
+        <div class="identity">
+
+          <a href="/" class="logo">
+            PEDRO LESTON MARTINS
+          </a>
+
+          <div class="descriptor">
+            INDUSTRIAL / PRODUCT / COMPUTATIONAL DESIGN
+          </div>
+
+        </div>
+
+        <nav>
+          <a href="/work" class="active">WORK</a>
+          <a href="/about">ABOUT</a>
+          <a href="/contact">CONTACT</a>
+        </nav>
+
+      </header>
+
+
+      <!-- WORK -->
+
+      <section class="work">
+
+        <div class="work-title">
+          SELECTED WORKS
+        </div>
+
+
+        <div class="projects">
+
+
+          <!-- ROW 1: LARGE LEFT / SMALL RIGHT -->
+
+          <a href="/work/sensing" class="project large left">
+
+            <div class="project-info">
+
+              <h2>SENSING</h2>
+
+              <span>PRODUCT / RESEARCH</span>
+
+            </div>
+
+            <div class="project-image">
+
+              <img
+                src="/images/sensing.jpg"
+                alt="Sensing project"
+              />
+
+            </div>
+
+          </a>
+
+
+          <a href="/work/cherish" class="project small right">
+
+            <div class="project-info">
+
+              <h2>CHERISH</h2>
+
+              <span>FURNITURE DESIGN</span>
+
+            </div>
+
+            <div class="project-image">
+
+              <img
+                src="/images/cherish.jpg"
+                alt="Cherish furniture design"
+              />
+
+            </div>
+
+          </a>
+
+
+          <!-- ROW 2: SMALL LEFT / LARGE RIGHT -->
+
+          <a href="/work/fuji-camera" class="project small left">
+
+            <div class="project-info">
+
+              <h2>FUJI CAMERA</h2>
+
+              <span>PRODUCT DESIGN</span>
+
+            </div>
+
+            <div class="project-image">
+
+              <img
+                src="/images/fuji.jpg"
+                alt="Fuji camera project"
+              />
+
+            </div>
+
+          </a>
+
+
+          <a href="/work/evolve" class="project large right">
+
+            <div class="project-info">
+
+              <h2>EVOLVE</h2>
+
+              <span>PRODUCT DESIGN</span>
+
+            </div>
+
+            <div class="project-image">
+
+              <img
+                src="/images/evolve.jpg"
+                alt="Evolve product design"
+              />
+
+            </div>
+
+          </a>
+
+
+          <!-- ROW 3: LARGE LEFT / SMALL RIGHT -->
+
+          <a href="/work/dtc" class="project large left">
+
+            <div class="project-info">
+
+              <h2>DTC</h2>
+
+              <span>PRODUCT DESIGN</span>
+
+            </div>
+
+            <div class="project-image">
+
+              <img
+                src="/images/dtc.jpg"
+                alt="DTC product design"
+              />
+
+            </div>
+
+          </a>
+
+
+          <a href="/work/push" class="project small right">
+
+            <div class="project-info">
+
+              <h2>PUSH</h2>
+
+              <span>PRODUCT DESIGN</span>
+
+            </div>
+
+            <div class="project-image">
+
+              <img
+                src="/images/push.jpg"
+                alt="Push product design"
+              />
+
+            </div>
+
+          </a>
+
+
+          <!-- ROW 4 -->
+
+          <a href="/work/renders" class="project large left">
+
+            <div class="project-info">
+
+              <h2>RENDERS</h2>
+
+              <span>3D VISUALISATION</span>
+
+            </div>
+
+            <div class="project-image">
+
+              <img
+                src="/images/renders.jpg"
+                alt="3D visualisation work"
+              />
+
+            </div>
+
+          </a>
+
+
+        </div>
+
+      </section>
+
+
+      <!-- FOOTER -->
+
+      <footer>
+
+        <span>
+          © {new Date().getFullYear()}
+        </span>
+
+        <span>
+          PEDRO LESTON MARTINS
+        </span>
+
+      </footer>
+
+    </main>
+
+  </body>
+</html>
+
+
+<style>
+
+  :global(*) {
+    box-sizing: border-box;
+  }
+
+
+  :global(html) {
+    scroll-behavior: smooth;
+  }
+
+
+  :global(body) {
+    margin: 0;
+
+    background: #000;
+
+    color: #fff;
+
+    font-family:
+      Arial,
+      Helvetica,
+      sans-serif;
+  }
+
+
+  a {
+    color: inherit;
+
+    text-decoration: none;
+  }
+
+
+  /* HEADER */
+
+  header {
+
+    position: relative;
+
+    width: 100%;
+
+    padding: 28px 32px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    z-index: 10;
+  }
+
+
+  .identity {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+
+  .logo {
+
+    white-space: nowrap;
+
+    font-size: 32px;
+
+    font-weight: 700;
+
+    letter-spacing: -0.05em;
+
+    line-height: 1;
+  }
+
+
+  .descriptor {
+
+    margin-top: 28px;
+
+    font-size: 11px;
+
+    letter-spacing: 0.1em;
+
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+
+  /* NAVIGATION */
+
+  nav {
+
+    display: flex;
+
+    gap: 36px;
+
+    font-size: 11px;
+
+    letter-spacing: 0.1em;
+  }
+
+
+  nav a {
+
+    transition: opacity 0.2s ease;
+  }
+
+
+  nav a:hover {
+
+    opacity: 0.5;
+  }
+
+
+  nav .active {
+
+    opacity: 0.45;
+  }
+
+
+  /* WORK */
+
+  .work {
+
+    position: relative;
+
+    padding: 20px 32px 160px;
+  }
+
+
+  .work-title {
+
+    margin-top: 80px;
+
+    font-size: clamp(55px, 6vw, 95px);
+
+    line-height: 0.8;
+
+    letter-spacing: -0.08em;
+
+    font-weight: 500;
+
+  }
+
+
+  /* PROJECT GRID */
+
+  .projects {
+
+    margin-top: 70px;
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    column-gap: 32px;
+
+    row-gap: 90px;
+  }
+
+
+  /* PROJECT */
+
+  .project {
+
+    display: block;
+
+    width: 100%;
+  }
+
+
+  /* LARGE PROJECT */
+
+  .project.large {
+
+    grid-column: span 2;
+  }
+
+
+  /* SMALL PROJECT */
+
+  .project.small {
+
+    grid-column: span 1;
+  }
+
+
+  /* FORCE POSITIONS */
+
+  .project.large.left {
+
+    grid-column: 1 / span 2;
+  }
+
+
+  .project.small.right {
+
+    grid-column: 3;
+  }
+
+
+  .project.small.left {
+
+    grid-column: 1;
+  }
+
+
+  .project.large.right {
+
+    grid-column: 2 / span 2;
+  }
+
+
+  /* IMAGE */
+
+  .project-image {
+
+    width: 100%;
+
+    height: 500px;
+
+    overflow: hidden;
+
+    background: #111;
+  }
+
+
+  .project-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+  }
+
+
+  /* PROJECT INFO */
+
+  .project-info {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: baseline;
+
+    padding-bottom: 14px;
+  }
+
+
+  .project-info h2 {
+
+    margin: 0;
+
+    font-size: 24px;
+
+    line-height: 1;
+
+    font-weight: 500;
+
+    letter-spacing: -0.04em;
+
+    transition: color 0.2s ease;
+  }
+
+
+  .project-info span {
+
+    font-size: 11px;
+
+    letter-spacing: 0.1em;
+
+    color: #777;
+
+    transition: color 0.2s ease;
+  }
+
+
+  /* PROJECT HOVER */
+
+  .project:hover .project-info h2,
+  .project:hover .project-info span {
+
+    color: #ff2e0a;
+  }
+
+
+  /* FOOTER */
+
+  footer {
+
+    padding: 25px 32px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 14px;
+
+    letter-spacing: 0.08em;
+
+    color: #777;
+  }
+
+
+  /* MOBILE */
+
+  @media (max-width: 700px) {
+
+    header {
+
+      padding: 22px;
+    }
+
+
+    .logo {
+
+      font-size: 20px;
+    }
+
+
+    nav {
+
+      gap: 14px;
+
+      font-size: 9px;
+    }
+
+
+    .work {
+
+      padding: 60px 22px 100px;
+    }
+
+
+    .work-title {
+
+      margin-top: 75px;
+
+      font-size: 12vw;
+    }
+
+
+    .descriptor {
+
+      margin-top: 18px;
+
+      font-size: 9px;
+
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+
+    .projects {
+
+      margin-top: 60px;
+
+      grid-template-columns: 1fr;
+
+      column-gap: 0;
+
+      row-gap: 65px;
+    }
+
+
+    .project.large.left,
+    .project.small.right,
+    .project.small.left,
+    .project.large.right {
+
+      grid-column: 1;
+    }
+
+
+    .project-image {
+
+      height: 70vw;
+    }
+
+
+    .project-info {
+
+      display: block;
+
+      padding-bottom: 12px;
+    }
+
+
+    .project-info h2 {
+
+      font-size: 22px;
+
+      margin-bottom: 7px;
+    }
+
+
+    .project-info span {
+
+      font-size: 9px;
+    }
+
+
+    footer {
+
+      padding: 20px 22px;
+    }
+
+  }
+
+</style>
+<script src="../scripts/page-transition.js"></script>
+
+<script>
+  import "../scripts/cursor-glow.js";
+</script>

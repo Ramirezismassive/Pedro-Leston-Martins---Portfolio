@@ -1,0 +1,337 @@
+```astro
+---
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Contact — Pedro Leston Martins</title>
+
+    <meta
+      name="description"
+      content="Contact Pedro Leston Martins, an Industrial, Product and Computational Designer."
+    />
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <div class="identity">
+          <a href="/" class="logo">
+            PEDRO LESTON MARTINS
+          </a>
+
+          <div class="descriptor">
+            INDUSTRIAL / PRODUCT / COMPUTATIONAL DESIGN
+          </div>
+        </div>
+
+        <nav>
+          <a href="/work">WORK</a>
+          <a href="/about">ABOUT</a>
+          <a href="/contact" class="active">CONTACT</a>
+        </nav>
+      </header>
+
+      <section class="contact">
+        <div class="contact-title">
+          CONTACT
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-text">
+            <div class="contact-links">
+              <a
+                href="mailto:plestonmartins@gmail.com"
+                class="contact-link"
+              >
+                EMAIL
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/pedrolestonmartins"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-link"
+              >
+                LINKEDIN
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-image">
+            <img
+              src="/images/contact.jpg"
+              alt="Pedro Leston Martins design work"
+            />
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <span>© {new Date().getFullYear()}</span>
+        <span>PEDRO LESTON MARTINS</span>
+      </footer>
+    </main>
+  </body>
+</html>
+
+<style>
+  :global(*) {
+    box-sizing: border-box;
+  }
+
+  :global(html) {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  :global(body) {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: #000;
+    color: #fff;
+    font-family:
+      Arial,
+      Helvetica,
+      sans-serif;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  header {
+    position: relative;
+    width: 100%;
+    padding: 28px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 10;
+  }
+
+  .identity {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    white-space: nowrap;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    line-height: 1;
+  }
+
+  .descriptor {
+    margin-top: 28px;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  nav {
+    display: flex;
+    gap: 36px;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+  }
+
+  nav a {
+    transition: opacity 0.2s ease;
+  }
+
+  nav a:hover {
+    opacity: 0.5;
+  }
+
+  nav .active {
+    opacity: 0.45;
+  }
+
+  .contact {
+    position: relative;
+    padding: 20px 32px 0;
+    height: calc(100vh - 101px);
+    overflow: hidden;
+  }
+
+  .contact-title {
+    margin-top: 80px;
+    font-size: clamp(55px, 6vw, 95px);
+    line-height: 0.8;
+    letter-spacing: -0.08em;
+    font-weight: 500;
+  }
+
+  .contact-content {
+    position: relative;
+    margin-top: 30px;
+    height: calc(100% - 110px);
+  }
+
+  .contact-text {
+    position: relative;
+    z-index: 2;
+    width: 32%;
+    max-width: 420px;
+  }
+
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .contact-link {
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+  }
+
+  .contact-link:hover {
+    opacity: 0.5;
+  }
+
+  .contact-image {
+    position: absolute;
+    top: -106px;
+    right: 0;
+    width: 60vw;
+    height: calc(100% + 106px);
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .contact-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+  footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 25px 32px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    color: #777;
+    border-top: 1px solid #222;
+    z-index: 20;
+  }
+
+  @media (max-width: 700px) {
+    :global(html) {
+      height: auto;
+      overflow: auto;
+    }
+
+    :global(body) {
+      height: auto;
+      min-height: 100%;
+      overflow: auto;
+    }
+
+    main {
+      height: auto;
+      min-height: 100vh;
+      overflow: visible;
+    }
+
+    header {
+      padding: 22px;
+    }
+
+    .logo {
+      font-size: 20px;
+    }
+
+    nav {
+      gap: 14px;
+      font-size: 9px;
+    }
+
+    .contact {
+      height: auto;
+      padding: 60px 22px 100px;
+      overflow: visible;
+    }
+
+    .contact-title {
+      margin-top: 75px;
+      font-size: 12vw;
+    }
+
+    .descriptor {
+      margin-top: 18px;
+      font-size: 9px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .contact-content {
+      height: auto;
+      margin-top: 80px;
+      display: flex;
+      flex-direction: column;
+      gap: 70px;
+    }
+
+    .contact-text {
+      width: 100%;
+      max-width: none;
+    }
+
+    .contact-links {
+      gap: 15px;
+    }
+
+    .contact-link {
+      font-size: 28px;
+    }
+
+    .contact-image {
+      position: relative;
+      top: auto;
+      right: auto;
+      width: 100%;
+      height: 60vh;
+    }
+
+    footer {
+      position: relative;
+      left: auto;
+      right: auto;
+      bottom: auto;
+      padding: 20px 22px;
+    }
+  }
+</style>
+<script src="../scripts/page-transition.js"></script>
+
+<script>
+  import "../scripts/cursor-glow.js";
+</script>
